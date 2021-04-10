@@ -41,13 +41,14 @@
 > $ mkdir learngit
 > $ cd learngit
 > $ git init
+> # git init newfolder #制定初始化仓库的目录
 > ```
 > 2. 通过命令将文件夹下所有文件信息添加到索引库的暂存区，然后提交到本地仓库
 > ```
 > $ git add -A #提交到暂存区
-> $ git commit #提交到仓库
+> $ git commit -m "注释，没有注释不允许提交" #提交到仓库
 > ```
-> 3. 把本地仓库内容推送到github中
+> 3. 把本地仓库内容推送到github中，将本地的master分支推送到origin主机，同时指定origin为默认主机，后面就可以不加任何参数使用git push了
 > 1> 在你的github中新建仓库<kbd>New repository</kbd>
 > 2> 将新建的仓库ssh链接拷贝好
 > ```
@@ -58,3 +59,27 @@
 > ```
 > $ git remote rm origin
 > ```
+
+##### 四、git的一些命令应用
+
+> |  命令   | 说明  |
+> |  ----  | ----  |
+> |<b>创建仓库命令</b>| |
+> | git init  | 初始化仓库 |
+> | git clone  | 拷贝一份远程仓库，也就是下载一个项目 |
+> |<b>提交与修改</b>||
+> | git add  | 添加文件到仓库 |
+> | git status  | 查看仓库当前的状态，显示有变更的文件 |
+> | git diff  | 比较文件的不同，暂存区和工作区的差异 |
+> | git commit  | 提交暂存区到本地仓库 |
+> | git reset  | 回退版本 |
+> | git rm  | 删除工作区文件 |
+> | git mv  | 移动或重命名工作区文件夹 |
+> |<b>日志</b> ||
+> | git log  | 查看历史提交记录 |
+> | git mv  | 以列表形式查看指定文件的历史修改记录 |
+> | <b>远程操作</b>  | |
+> | git remote  | 远程仓库操作 |
+> | git fetch  | 从远程获取代码库 |
+> | git pull  | 下载远程代码并合并 |
+> | git push  | 上传远程代码并合并 |
