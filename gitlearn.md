@@ -83,4 +83,14 @@
 > | git fetch  | 从远程获取代码库 |
 > | git pull  | 下载远程代码并合并 |
 > | git push  | 上传远程代码并合并 |
-> 
+
+#### 五、git分支管理
+
+> ```
+> $ git branch #列出分支列表
+> $ git branch branchname #创建分支
+> $ git branch -d branchname #删除分支
+> $ git checkout branchname #切换分支
+> $ git checkout -b branchname #创建新分支并切换到该分支下
+> $ git merge #合并分支
+> ```
