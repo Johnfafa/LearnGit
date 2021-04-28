@@ -84,9 +84,10 @@
 > | git pull  | 下载远程代码并合并 |
 > | git push  | 上传远程代码并合并 |
 > | git ls-files | 查看所有文件 |
-> 
+>
 >
 > ```
+> $ git commit -am "commit message" #使用commit跳过add
 > $ git rm 文件名称 #删除指定文件
 > $ git rm -r 文件夹名称 #删除指定文件夹
 > $ git rm –r * #删除该目录下所有文件和子目录
