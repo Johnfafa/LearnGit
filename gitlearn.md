@@ -103,3 +103,20 @@
 > $ git checkout -b branchname #创建新分支并切换到该分支下
 > $ git merge #合并分支
 > ```
+
+#### 六、遇到的一些问题
+
+1. 文件夹提交到github后打不开，有个白色向右的小箭头，如图：
+
+![alt arrow](gitlearn.assets/github文件夹打不开有白色小箭头.png)
+> 解决方案:
+>
+> 1. 删除子文件夹中的.git文件
+>
+> ```
+> git rm --cache [文件夹名称]
+> git add .
+> git commit -m "message"
+> git push origin [branchname]
+> ```
+
