@@ -83,6 +83,8 @@
 > | git fetch  | 从远程获取代码库 |
 > | git pull  | 下载远程代码并合并 |
 > | git push  | 上传远程代码并合并 |
+> | git ls-files | 查看所有文件 |
+> 
 >
 > ```
 > $ git rm 文件名称 #删除指定文件
