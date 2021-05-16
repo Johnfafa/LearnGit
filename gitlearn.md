@@ -102,6 +102,7 @@
 > $ git branch -d branchname #删除分支
 > $ git checkout branchname #切换分支
 > $ git checkout -b branchname #创建新分支并切换到该分支下
+> $ git branch -m [分支A] [分支B] #重命名分支
 > $ git merge #合并分支
 > ```
 
@@ -120,4 +121,13 @@
 > git commit -m "message"
 > git push origin [branchname]
 > ```
+---
+2. 与最新版本有冲突无法提交，合并又觉得麻烦
 
+> 解决方案：
+> ```
+> # 强制重置本地修改，删除文件夹后重新获取最新代码
+> $ git fetch -- all
+> $ git reset --hard origin/master
+> ```
+>
