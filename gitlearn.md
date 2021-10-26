@@ -130,4 +130,18 @@
 > $ git fetch -- all
 > $ git reset --hard origin/master
 > ```
+
+3. 推送时报错
+
+> ```
+> $ git push -u origin master
+> ```
 >
+> 错误信息：<font color=red>error: failed to push some refs to 'xxx.git'</font>
+>
+> 解决方案：
+>
+> ```
+> git pull --rebase origin main
+> git push origin main
+> ```
