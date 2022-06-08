@@ -106,6 +106,22 @@
 > $ git merge #合并分支
 > ```
 
+`从其他仓库获取最新代码`
+
+>
+> ```
+> # 创建并切换到分支下
+> git checkout -b fenzhi1
+> # 从主干仓库获取最新代码
+> git pull https://xxx.git
+> # 切到当前master
+> git checkout master
+> # 合并分支到当前主干上
+> git merge fenzhi1 
+> # 推送
+> git push
+> ```
+
 #### 六、遇到的一些问题
 
 1. 文件夹提交到github后打不开，有个白色向右的小箭头，如图：
